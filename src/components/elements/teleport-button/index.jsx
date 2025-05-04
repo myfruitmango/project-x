@@ -1,8 +1,12 @@
+// ** React Imports
 import React, { useState } from 'react'
 
 const TeleportButton = () => {
+	// ! hooks
+	// * state
 	const [position, setPosition] = useState({ Bottom: '0%', Right: '0%' })
 
+	// ! others
 	const moveButton = () => {
 		const randomBottom = Math.floor(Math.random() * 80) + '%'
 		const randomRight = Math.floor(Math.random() * 80) + '%'
