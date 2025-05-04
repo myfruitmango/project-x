@@ -10,7 +10,7 @@ const blink = keyframes`
   }
 `
 
-export const BlinkingCursor = styled.span`
+export const BlinkingCursor = styled.h2`
   display: inline-block;
   width: 1ch;
   color: #ff4d6d;
