@@ -3,8 +3,11 @@ node_modules/
 .pnp/
 .pnp.js
 
-# Testing output
+# testing
 coverage/
+
+# production
+/build
 
 # Miscellaneous
 .DS_Store
