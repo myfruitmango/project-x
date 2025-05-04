@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 
 // ** Styles Import
-import './styles.css'
+import { BlinkingCursor } from './styles.jsx'
 
 const TypingText = ({
 	words = [],
@@ -88,7 +88,7 @@ const TypingText = ({
 	return (
 		<>
 			<h3 className="text-white text-center">{currentText}</h3>
-			<h2 className="blinking-cursor">|</h2>
+			<BlinkingCursor>|</BlinkingCursor>
 		</>
 	)
 }
