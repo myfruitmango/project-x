@@ -1,7 +1,6 @@
 .shake-button {
 	animation: wiggle 2s linear infinite;
-	background: #FFFFF0;
-	background: linear-gradient(top, #555, #333);
+	background: #fffff0;
 	/* transform-origin: 50% 5em; */
 }
 

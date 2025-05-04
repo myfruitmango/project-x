@@ -1,4 +1,8 @@
+// ** React Imports
 import React, { useEffect, useState } from 'react'
+
+// ** Styles Import
+import './styles.css'
 
 const TypingText = ({
 	words = [],
@@ -9,6 +13,8 @@ const TypingText = ({
 	loop = false,
 	stop = false
 }) => {
+	// ! hooks
+	// * state
 	const [wordIndex, setWordIndex] = useState(0)
 	const [charIndex, setCharIndex] = useState(0)
 	const [currentText, setCurrentText] = useState('')
@@ -16,6 +22,7 @@ const TypingText = ({
 	const [paused, setPaused] = useState(false)
 	const [hasCompleted, setHasCompleted] = useState(false)
 
+	// * effect
 	useEffect(() => {
 		if (words.length === 0 || stop || hasCompleted) return
 
@@ -79,10 +86,10 @@ const TypingText = ({
 	])
 
 	return (
-		<h3 className="text-white text-center">
-			{currentText}
+		<>
+			<h3 className="text-white text-center">{currentText}</h3>
 			<h2 className="blinking-cursor">|</h2>
-		</h3>
+		</>
 	)
 }
 
