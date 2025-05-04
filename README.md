@@ -1,4 +1,4 @@
-# Your Project Awesome 🚀
+# Project X 🚀
 
 ## ✨ Starting
 
@@ -58,10 +58,6 @@ npm run build
 
 ## 📦 Using Package manager
 
-- 🌈 [Ant Design.](https://ant.design/)
-- 🛡 [Axios](https://axios-http.com/docs/intro)
-- 📖 [Lodash.](https://lodash.com/)
-- 🗂️ [Redux.](https://redux.js.org/introduction/getting-started)
 - 🌍 [React Router DOM.](https://reactrouter.com/en/main)
 - 🎨 [Tailwind CSS.](https://tailwindcss.com/docs/installation)
 
