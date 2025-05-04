@@ -25,11 +25,7 @@ const wiggle = keyframes`
   }
 `
 
-export const Button = styled.button`
-	animation: ${wiggle} 2s linear infinite;
+export const ShakeButton = styled.button`
+  animation: ${wiggle} 2s linear infinite;
 	background: #fffff0;
-	border: none;
-	padding: 0.75rem 1.5rem;
-	cursor: pointer;
-	border-radius: 0.5rem;
 `
