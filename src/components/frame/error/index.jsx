@@ -1,20 +1,25 @@
 // ** React Imports
 import React, { Fragment, useEffect, useState } from 'react'
 
+// ** Elements Imports
 import Background from 'components/elements/background'
-
-import Text from 'components/fragments/text'
 import TeleportButton from 'components/elements/teleport-button'
 import ShakeButton from 'components/elements/shake-button'
 import HeartLiquidLoading from 'components/elements/loading'
 
+// ** Fragments Imports
+import Text from 'components/fragments/text'
+
 const ErrorFrame = ({ onSuccess, onPlay }) => {
+	// ! hooks
+	// * state
 	const [showButton, setShowButton] = useState(false)
 	const [success, setSuccess] = useState(false)
 	const [showText, setShowText] = useState(false)
 	const [loading, setLoading] = useState(true)
 	const [complateLoad, setComplateLoad] = useState(false)
 
+	// * effect
 	useEffect(() => {
 		const timer = setTimeout(() => {
 			setShowText(true)
@@ -23,6 +28,7 @@ const ErrorFrame = ({ onSuccess, onPlay }) => {
 		return () => clearTimeout(timer)
 	}, [])
 
+	// ! data
 	const words = [
 		'Hi...',
 		'Ya kamu',
@@ -73,20 +79,29 @@ const ErrorFrame = ({ onSuccess, onPlay }) => {
 		'Yippieee',
 		'Selamat kamu telah terpilih',
 		'Menjadi pacar orang ter-tengilllll',
+		'Orang terganteng sedunia',
 		'Hahaha',
 		'Semoga Sukses yaaa',
 		'Dan...',
 		'Aku akan dekelarsikan',
 		'Pada tanggal 5 Mei 2025',
-		'Kamu menjadi bagian dalam hidupku'
+		'Kamu menjadi...',
+		'Bagian dalam hidupku',
+		'Susah senang',
+		'Tawa Tangis',
+		'Akan kita lewatin bersama',
+		'Kita lari bersama',
+		'Berhenti bersama',
+		'Love you 💌 '
 	]
 
+	// ! handle
 	const handleClick = () => {
 		setSuccess(true)
 		onSuccess?.()
 	}
 
-	const play = () => {
+	const handlePlay = () => {
 		setLoading(false)
 		onPlay?.()
 	}
@@ -99,7 +114,7 @@ const ErrorFrame = ({ onSuccess, onPlay }) => {
 						<div className="h-screen w-screen grid content-center justify-items-center gap-4 bg-black">
 							<span className="text-white">Memanggil...</span>
 							<h2 className="text-white">Jamal</h2>
-							<ShakeButton name="Kamu diundang" onClick={play} />
+							<ShakeButton name="Kamu diundang" onClick={handlePlay} />
 						</div>
 					) : (
 						<HeartLiquidLoading
