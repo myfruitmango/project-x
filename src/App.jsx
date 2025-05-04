@@ -2,7 +2,7 @@
 import React from 'react'
 
 // ** Route Imports
-import Route from './config/routes/route'
+import Route from 'config/routes/route'
 
 // ** Hooks Imports
 import { useScrollToTop } from 'config/hooks/scroll-to-top'
