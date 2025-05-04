@@ -5,8 +5,11 @@ import React, { useEffect, useRef } from 'react'
 import './styles.css'
 
 const HeartAnimation = ({ children }) => {
+	// ! hooks
+	// * ref
 	const bgRef = useRef(null)
 
+	// * effect
 	useEffect(() => {
 		const interval = setInterval(() => {
 			const bgEl = bgRef.current
@@ -41,7 +44,6 @@ const HeartAnimation = ({ children }) => {
 			bgEl.appendChild(heart1)
 			bgEl.appendChild(heart2)
 
-			// Cleanup hearts
 			const hearts = bgEl.querySelectorAll('.heart')
 			hearts.forEach((heart) => {
 				const top = parseFloat(getComputedStyle(heart).top)
