@@ -34,7 +34,7 @@ const ErrorFrame = ({ onSuccess, onPlay }) => {
 		'Ya kamu',
 		'Nadilla Asifa Salma',
 		'Kamu sibuk ga sekarang?',
-		'Aku',
+		'Aku...',
 		'Cuman ingin menyampaikan sesuatu',
 		'Ini penting!',
 		'Jadi tolong disimak ya!',
@@ -57,7 +57,7 @@ const ErrorFrame = ({ onSuccess, onPlay }) => {
 		'Tapi kamu istimewa bagiku',
 		'dan aku mau bilang juga',
 		'Ini yang trakhir janji',
-		'Terima kasih ya udah sudah hadir didekat ku',
+		'Terima kasih ya udah hadir di hidup ku',
 		'Menjadi tempat ternyaman',
 		'Aku akan selalu usahain',
 		'Apapun selagi aku mampu, buat kamu dan untuk kita',
@@ -92,6 +92,7 @@ const ErrorFrame = ({ onSuccess, onPlay }) => {
 		'Akan kita lewatin bersama',
 		'Kita lari bersama',
 		'Berhenti bersama',
+		'you are the {css} to my <>html</>',
 		'Love you 💌 '
 	]
 
