@@ -1,7 +1,6 @@
 .shake-button {
 	animation: wiggle 2s linear infinite;
 	background: #fffff0;
-	background: #333;
 	/* transform-origin: 50% 5em; */
 }
 
