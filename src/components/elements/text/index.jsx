@@ -86,10 +86,10 @@ const TypingText = ({
 	])
 
 	return (
-		<>
-			<h3 className="text-white text-center">{currentText}</h3>
-			<BlinkingCursor>|</BlinkingCursor>
-		</>
+		<h3 className="text-white text-center">
+			{currentText}
+			<BlinkingCursor className="">|</BlinkingCursor>
+		</h3>
 	)
 }
 
