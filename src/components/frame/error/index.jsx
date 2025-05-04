@@ -92,6 +92,7 @@ const ErrorFrame = ({ onSuccess, onPlay }) => {
 		'Akan kita lewatin bersama',
 		'Kita lari bersama',
 		'Berhenti bersama',
+		'you are the {css} to my <>html</>',
 		'Love you 💌 '
 	]
 
