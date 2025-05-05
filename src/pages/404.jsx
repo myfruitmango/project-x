@@ -2,9 +2,11 @@
 import React from 'react'
 
 const Page404 = () => {
-  return (
-    <div>Page404</div>
-  )
+	return (
+		<div className="flex justify-center items-center">
+			<p>Page404</p>
+		</div>
+	)
 }
 
 export default Page404
